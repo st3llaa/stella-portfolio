@@ -39,7 +39,14 @@ export default function Home() {
             <p className="text-gray-300 mb-4">
               Built a web app using React, FastAPI, and PostgreSQL to model healthcare costs and out-of-pocket expenses.
             </p>
-            <p className="text-sm text-gray-400">Tech: React, Tailwind, FastAPI, PostgreSQL</p>
+            <p className="text-sm text-gray-400">Tech: React, Tailwind, FastAPI, PostgreSQL</p>  
+            <Image
+              src="/projects/healthcare.png"
+              alt="Healthcare Cost Estimator"
+              width={400}
+              height={200}
+              className="rounded-lg mb-4"
+            />  
           </div>
           {/* Project 2 */}
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition">
