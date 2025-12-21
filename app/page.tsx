@@ -3,13 +3,31 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-gray-900 min-h-screen flex flex-col text-white">
+      {/* NAVIGATION SECTION */}
+        <header className="flex justify-between items-center px-6 py-4 bg-gray-900">
+        <div className="font-bold text-xl">Stella Astbury</div>
+
+        <nav className="flex gap-6">
+        <a href="/" className="hover:text-blue-400 transition">
+          Home
+       </a>
+        <a href="/about" className="hover:text-blue-400 transition">
+          About
+        </a>
+      </nav>
+      </header>
+
       {/* HERO SECTION */}
       <section className="flex flex-col items-center justify-center text-center py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <p className="text-sm text-gray-400 mt-4">
+          Engineer. Athlete. Builder.
+        </p>
         <h1 className="text-5xl md:text-6xl font-bold mb-4">
           Stella Astbury
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-xl">
-          Software Engineer | Health Tech Enthusiast | Full-Stack Developer
+          Software Engineer | Combat Sports Athlete | Health & Performance Builder
+          Building at the intersection of health, performance, and community
         </p>
         <div className="flex gap-4">
           <a
@@ -18,12 +36,14 @@ export default function Home() {
           >
             See My Work
           </a>
-          <a
-            href="/resume.pdf"
-            className="px-6 py-3 border border-blue-600 text-blue-400 rounded-lg hover:bg-blue-800 hover:text-white transition"
-          >
-            Resume
-          </a>
+        <a
+          href="/Stella Astbury.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 border border-blue-600 text-blue-400 rounded-lg hover:bg-blue-800 hover:text-white transition"
+        >
+          Resume
+        </a>
         </div>
       </section>
 
@@ -37,8 +57,13 @@ export default function Home() {
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition">
             <h3 className="text-2xl font-semibold mb-2 text-white">Healthcare Cost Estimator</h3>
             <p className="text-gray-300 mb-4">
-              Built a web app using React, FastAPI, and PostgreSQL to model healthcare costs and out-of-pocket expenses.
+              Built a full-stack healthcare cost modeling platform to estimate out-of-pocket expenses and improve patient financial transparency.
             </p>
+            <ul>
+              <li>Designed REST APIs with FastAPI and PostgreSQL</li>
+              <li>Implemented cost simulations and insurance logic  </li>
+              <li>Deployed with production-ready authentication patterns</li>
+            </ul>
             <p className="text-sm text-gray-400">Tech: React, Tailwind, FastAPI, PostgreSQL</p>  
             <Image
               src="/projects/healthcare.png"
@@ -72,7 +97,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
           <p className="mb-4 text-gray-300">
-            I’m open to collaborating, internships, or full-time roles in software engineering and health tech.
+            I build things I care about and collaborate with people who do the same.
           </p>
           <div className="flex justify-center gap-6">
             <a href="mailto:sastbury@ucsd.edu" className="text-blue-400 hover:underline">
